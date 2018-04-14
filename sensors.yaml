@@ -42,6 +42,7 @@
 
   platform: mqtt
   name: "Szoba Lux"
+  icon: mdi:spotlight-beam
   state_topic: "room/ambient_light"
   unit_of_measurement: "Lux"
   force_upcate: true
