@@ -1,6 +1,7 @@
   platform: yr
   name: Időjárás
 
+sensor 2:
   platform: mqtt
   name: "Hőmérséklet Konyha"
   state_topic: "/home/temp/kitchen"
