@@ -479,6 +479,6 @@ intent_script: !include alexa_intents.yaml
 #tts:
 #  - platform: google
 
-automation: !include automation.yaml
+automation: !include automations.yaml
 script: !include scripts.yaml
 
