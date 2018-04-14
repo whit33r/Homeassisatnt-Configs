@@ -1,4 +1,3 @@
-automation:
   - alias: "Media player paused/stopped"
     trigger:
       - platform: state
