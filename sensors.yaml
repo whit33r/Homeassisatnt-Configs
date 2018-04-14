@@ -1,5 +1,5 @@
-  - platform: yr
-    name: Időjárás
+  platform: yr
+  name: Időjárás
 
   platform: mqtt
   name: "Hőmérséklet Konyha"
