@@ -1,0 +1,34 @@
+- action:
+  - data:
+      entity_id: light.karacsonyfa
+    service: light.turn_off
+  - data:
+      entity_id: light.kis_karaconyfa
+    service: light.turn_off
+  - data:
+      entity_id: light.szoba_vilagitas
+    service: light.turn_off
+  alias: All Light of when noone is home
+  condition: []
+  id: '1513505967318'
+  trigger:
+  - entity_id: device_tracker.lg_g4lan
+    from: home
+    platform: state
+    to: away
+  - entity_id: device_tracker.whit33r_samsung_s7lan
+    from: home
+    platform: state
+    to: away
+- action:
+  - data:
+      entity_id: light.karacsonyfa
+    service: light.turn_off
+  alias: New Automation
+  condition: []
+  id: '1513506055223'
+  trigger:
+  - entity_id: device_tracker.lg_g4lan
+    from: home
+    platform: state
+    to: away
