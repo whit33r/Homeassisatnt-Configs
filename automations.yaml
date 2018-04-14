@@ -1,34 +1,98 @@
-- action:
-  - data:
-      entity_id: light.karacsonyfa
-    service: light.turn_off
-  - data:
-      entity_id: light.kis_karaconyfa
-    service: light.turn_off
-  - data:
-      entity_id: light.szoba_vilagitas
-    service: light.turn_off
-  alias: All Light of when noone is home
-  condition: []
-  id: '1513505967318'
-  trigger:
-  - entity_id: device_tracker.lg_g4lan
-    from: home
-    platform: state
-    to: away
-  - entity_id: device_tracker.whit33r_samsung_s7lan
-    from: home
-    platform: state
-    to: away
-- action:
-  - data:
-      entity_id: light.karacsonyfa
-    service: light.turn_off
-  alias: New Automation
-  condition: []
-  id: '1513506055223'
-  trigger:
-  - entity_id: device_tracker.lg_g4lan
-    from: home
-    platform: state
-    to: away
+automation:
+  - alias: "Media player paused/stopped"
+    trigger:
+      - platform: state
+        entity_id: media_player.kodi
+        from: 'playing'
+        to: 'paused'
+    action:
+        service: scene.turn_on
+        entity_id: scene.dim_up_movie
+  - alias: "Media player paused/stopped_"
+    trigger:
+      - platform: state
+        entity_id: media_player.kodi
+        from: 'paused'
+        to: 'playing'
+    action:
+        service: scene.turn_on
+        entity_id: scene.dim_down_movie
+  - alias: "Media player Idle to Playing"
+    trigger:
+      - platform: state
+        entity_id: media_player.kodi
+        from: 'idle'
+        to: 'playing'
+    action:
+        service: scene.turn_on
+        entity_id: scene.dim_down_movie
+#  - alias: "Turn_on_all_light_when_noone_at_home"
+#    trigger:
+#      - platform: state
+#        entity_id: device_tracker.whit33r_samsung_s7lan, device_tracker.lg_g4lan
+#        from: 'home'
+#        to: 'away'
+#    action:
+#        service: light.turn_off
+#        entity_id: light.karacsonyfa
+  - alias: "When_lightoff_lockoff"
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.bejarati_ajto_zar
+        from: 'off'
+        to: 'on'
+    condition:
+      - condition: state
+        entity_id: switch.folyoso_vilagitas
+        state: 'on'
+    action:
+      - delay: '00:00:30'
+      - service: homeassistant.turn_off
+        entity_id: switch.folyoso_vilagitas
+  - alias: "When_lighton_lockoff"
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.bejarati_ajto_zar
+        from: 'off'
+        to: 'on'
+    condition:
+      - condition: state
+        entity_id: switch.folyoso_vilagitas
+        state: 'off'
+    action:
+      - delay: '00:00:01'
+      - service: homeassistant.turn_on
+        entity_id: switch.folyoso_vilagitas
+  - alias: "Notify_pushover"
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.bejarati_ajto_zar
+        from: 'off'
+        to: 'on'
+    action:
+      - service: notify.pushovernoti
+        data:
+          message: "Ajtózár Nyitva!"
+          title: "Home-Assistant"
+          data:
+            url: "https://www.home-assistant.io/"
+            sound: pianobar
+            priority: 0
+  - alias: Turn off kitchen light 10 minutes after last movement
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.mozgaserzekelo
+        to: 'off'
+        for:
+         minutes: 5
+    action:
+      - service: homeassistant.turn_off
+        entity_id: switch.folyoso_vilagitas
+  - alias: Turn on kitchen light when there is movement
+    trigger:
+     - platform: state
+       entity_id: binary_sensor.mozgaserzekelo
+       to: 'on'
+    action:
+     - service: homeassistant.turn_on
+       entity_id: switch.folyoso_vilagitas
