@@ -282,6 +282,7 @@ switch 5:
 binary_sensor:
 - platform: mqtt
   name: "Bejárati Ajtó"
+  icon: mdi:door
   state_topic: "sensor/maindoor/motion"
   qos: 0
   payload_on: "Nyitva"
