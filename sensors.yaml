@@ -21,16 +21,19 @@
   - platform: mqtt
     name: "Volt"
     state_topic: "sonoff/volt"
+    icon: mdi:power
     unit_of_measurement: "V"
     force_update: true
   - platform: mqtt
     name: "Jelenlegi Teljesítmény"
     state_topic: "sonoff/power"
+    icon: mdi:power
     unit_of_measurement: "W"
     force_update: true
   - platform: mqtt
     name: "Össz Fogyasztás"
     state_topic: "sonoff/totalenergy"
+    icon: mdi:power
     unit_of_measurement: "kWh"
     force_update: true
   - platform: mqtt
