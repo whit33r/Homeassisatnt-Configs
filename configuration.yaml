@@ -424,4 +424,5 @@ intent_script: !include alexa_intents.yaml
 
 automation: !include automation.yaml
 script: !include scripts.yaml
+sensor: !include sensors.yaml
 
