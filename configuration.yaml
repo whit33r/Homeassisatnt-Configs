@@ -223,6 +223,18 @@ switch 5:
   payload_off: "off"
   retain: true
   
+script:
+  turn_tv_off:
+    sequence:
+      - service: switch.turn_on
+        data:        
+        entity_id: switch.yamaha
+      - delay:
+        seconds: 2
+      - service: switch.turn_off
+        data:        
+        entity_id: switch.yamaha
+  
 scene:
   - name: night_on
 #    friendly_name: night_light
@@ -338,17 +350,6 @@ group:
       - device_tracker.lg_g4lan
       - device_tracker.whit33r_samsung_s7lan
       
-script:
-  turn_tv_off:
-    sequence:
-  - service: switch.turn_on
-    data:        
-      entity_id: switch.yamaha
-  - delay:
-     seconds: 2
-  - service: switch.turn_off
-   data:        
-     entity_id: switch.yamaha
     
 alexa:
 
