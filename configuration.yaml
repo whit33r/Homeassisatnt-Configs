@@ -222,18 +222,16 @@ switch 5:
   payload_on: "on"
   payload_off: "off"
   retain: true
-  
+
+        
 script:
-  turn_tv_off:
+  turn_media_on:
     sequence:
+      # This is written using the Script Syntax
       - service: switch.turn_on
-        data:        
-        entity_id: switch.yamaha
-      - delay:
-        seconds: 2
-      - service: switch.turn_off
-        data:        
-        entity_id: switch.yamaha
+        data:
+          entity_id: switch.yamaha
+      - delay: '00:00:01'
   
 scene:
   - name: night_on
@@ -292,7 +290,7 @@ group:
       - automation.When_lightoff_lockoff
       - automation.When_lighton_lockoff
       - scene.media_on
-      - script.turn_tv_off
+      - script.turn_media_on
 #      - climate.study
 #      - scene.dim_up_movie
 #      - scene.dim_down_movie
