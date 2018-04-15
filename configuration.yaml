@@ -275,7 +275,7 @@ group:
       - switch.fogyasztasmero
   power:
     name: Fogyasztás
-    view: no
+#    view: no
     entities:
       - sensor.volt
       - sensor.jelenlegi_teljesitmeny
