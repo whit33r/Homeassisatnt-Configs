@@ -116,6 +116,7 @@ emulated_hue:
   exposed_domains:
     - light
     - switch
+    - script
 
 # Checks for available updates
 # Note: This component will send some information about your system to
