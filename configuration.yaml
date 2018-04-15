@@ -34,9 +34,9 @@ climate:
 
 http:
    api_password: !secret http_password
-#   ssl_certificate: /etc/letsencrypt/live/whiterhass.duckdns.org/fullchain.pem
-#   ssl_key: /etc/letsencrypt/live/whiterhass.duckdns.org/privkey.pem
-#   base_url: whiterhass.duckdns.org:443
+   ssl_certificate: /etc/letsencrypt/live/whiterhass.duckdns.org/fullchain.pem
+   ssl_key: /etc/letsencrypt/live/whiterhass.duckdns.org/privkey.pem
+   base_url: whiterhass.duckdns.org:443
 
 mqtt:
   broker: localhost
