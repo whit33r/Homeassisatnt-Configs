@@ -128,6 +128,7 @@ sun:
 switch:
   platform: mqtt
   name: "Folyosó Világítás"
+  icon: mdi:lightbulb
   alias: "folyoso_light"
   state_topic: "home/sonoff/living_room/1/stat"
   command_topic: "home/sonoff/living_room/1"
