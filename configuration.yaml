@@ -251,9 +251,9 @@ scene:
        rgb_color: [0, 0, 255]
        transition: 5
   - name: media_on
-        entities:
-          switch.yamaha
-            state: on
+    entities:
+      switch.yamaha
+        state: on
 
 
 group:
