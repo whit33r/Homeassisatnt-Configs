@@ -232,11 +232,11 @@ group:
   room:
     name: Szoba
     entities:
-      - light.karacsonyfa
-      - light.kis_karacsonyfa
+#      - light.karacsonyfa
+#      - light.kis_karacsonyfa
       - light.szoba_hangulatfeny
       - switch.szoba_vilagitas
-      - switch.test
+#      - switch.test
       - sensor.szoba_lux
       - automation.When_lightoff_lockoff
       - automation.When_lighton_lockoff
@@ -273,6 +273,10 @@ group:
       - climate.szoba_termosztat
       - switch.szoba_futopanel
       - switch.fogyasztasmero
+  power:
+    name: Fogyasztás
+    view: no
+    entities:
       - sensor.volt
       - sensor.jelenlegi_teljesitmeny
       - sensor.ossz_fogyasztas
