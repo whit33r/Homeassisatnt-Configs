@@ -226,10 +226,10 @@ group:
     entities:
       - group.room
       - group.kitchen
-      - group.media
-      - group.power
-#      - group.awesome_people
       - group.climate
+      - group.power
+      - group.media
+#      - group.awesome_people
   room:
     name: Szoba
     entities:
