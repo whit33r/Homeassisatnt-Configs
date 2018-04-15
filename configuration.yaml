@@ -11,8 +11,10 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Budapest
   # Customization file
-  customize: !include customize.yaml
-
+  customize:
+    script.mozi_bekapcsolasa
+      icon: mdi:filmstrip
+  
 influxdb:
 
 frontend:
