@@ -227,6 +227,7 @@ group:
       - group.room
       - group.media_dev
       - group.kitchen
+      - group.power
       - group.awesome_people
       - group.climate
   room:
