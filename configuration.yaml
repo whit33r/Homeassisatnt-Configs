@@ -88,7 +88,7 @@ media_player:
 
 switch 8:
   - platform: broadlink
-    host: 10.10.0.53
+    host: 10.10.1.15
     mac: '34:EA:34:D0:AC:E9'
     type: rm
 
