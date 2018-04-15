@@ -319,7 +319,7 @@ group:
       - light.szoba_hangulatfeny
       - switch.szoba_vilagitas
 #      - switch.test
-      - sensor.szoba_lux
+      - sensor.fenyerosseg
       - automation.When_lightoff_lockoff
       - automation.When_lighton_lockoff
       - script.mozi_bekapcsolasa
