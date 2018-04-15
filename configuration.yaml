@@ -14,6 +14,9 @@ homeassistant:
   customize:
     script.mozi_bekapcsolasa:
       icon: mdi:filmstrip
+      friendly_name: Mozi Bekapcsolása
+    script.mozi_kikapcsolasa:
+      icon: mdi:filmstrip
   
 influxdb:
 
