@@ -1,77 +1,77 @@
   - platform: mqtt_json
-      name: "Szoba Hangulatfény"
+    name: "Szoba Hangulatfény"
  #   fiendly_name: "Szoba Világítás"
-      state_topic: "whit33r/stripUp"
-      command_topic: "whit33r/stripUp/set"
-      effect: true
-      effect_list:
-        - bpm
-        - candy cane  
-        - confetti  
-        - cyclon rainbow  
-        - dots  
-        - fire  
-        - glitter  
-        - juggle  
-        - lightning
-        - noise  
-        - police all  
-        - police one  
-        - rainbow  
-        - rainbow with glitter  
-        - ripple  
-        - sinelon  
-        - solid  
-        - twinkle  
-      brightness: true
-      flash: true
-      rgb: true
-      optimistic: false
-      qos: 0
+    state_topic: "whit33r/stripUp"
+    command_topic: "whit33r/stripUp/set"
+    effect: true
+    effect_list:
+      - bpm
+      - candy cane  
+      - confetti  
+      - cyclon rainbow  
+      - dots  
+      - fire  
+      - glitter  
+      - juggle  
+      - lightning
+      - noise  
+      - police all  
+      - police one  
+      - rainbow  
+      - rainbow with glitter  
+      - ripple  
+      - sinelon  
+      - solid  
+      - twinkle  
+    brightness: true
+    flash: true
+    rgb: true
+    optimistic: false
+    qos: 0
       
   - platform: mqtt_json
-      name: "Kis Karácsonyfa"
-      state_topic: "whit33r/strip_test"
-      command_topic: "whit33r/strip_test/set"
-      effect: true
-      effect_list:
-        - bpm
-        - candy cane
-        - confetti
-        - cyclon rainbow
-        - dots
-        - fire
-        - glitter
-        - juggle
-        - lightning
-        - noise
-        - police all
-        - police one
-        - rainbow
-        - rainbow with glitter
-        - ripple
-        - sinelon
-        - solid
-        - twinkle
-      brightness: true
-      flash: true
-      rgb: true
-      optimistic: false
-      qos: 0
+    name: "Kis Karácsonyfa"
+    state_topic: "whit33r/strip_test"
+    command_topic: "whit33r/strip_test/set"
+    effect: true
+    effect_list:
+      - bpm
+      - candy cane
+      - confetti
+      - cyclon rainbow
+      - dots
+      - fire
+      - glitter
+      - juggle
+      - lightning
+      - noise
+      - police all
+      - police one
+      - rainbow
+      - rainbow with glitter
+      - ripple
+      - sinelon
+      - solid
+      - twinkle
+    brightness: true
+    flash: true
+    rgb: true
+    optimistic: false
+    qos: 0
 
   - platform: mqtt_json
-      name: "Karácsonyfa"
-      alias: "Karácsonyfa"
-      state_topic: "whit33r/christmas_light1"
-      command_topic: "whit33r/room/christmas_light1"
-      brightness: true
-      optimistic: false
-      qos: 0
+    name: "Karácsonyfa"
+    alias: "Karácsonyfa"
+    state_topic: "whit33r/christmas_light1"
+    command_topic: "whit33r/room/christmas_light1"
+    brightness: true
+    optimistic: false
+    qos: 0
 
   - platform: mqtt_json
-      name: "Switch"
-      state_topic: "whit33r/sonoff1"
-      command_topic: "/whit33r/kitchen/sonoff1"
-#    brightness: true
-      optimistic: false
-      qos: 0
+    name: "Switch"
+    state_topic: "whit33r/sonoff1"
+    command_topic: "/whit33r/kitchen/sonoff1"
+#   rightness: true
+    optimistic: false
+    qos: 0
