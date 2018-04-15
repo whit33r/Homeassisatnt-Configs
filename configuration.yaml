@@ -225,8 +225,8 @@ group:
     icon: mdi:home 
     entities:
       - group.room
-      - group.media
       - group.kitchen
+      - group.media
       - group.power
 #      - group.awesome_people
       - group.climate
