@@ -226,7 +226,7 @@ switch 5:
 
         
 script:
-  Mozi Bekapcsolása:
+  mozi_bekapcsolasa:
     sequence:
       - service: switch.turn_on
         data:
@@ -241,7 +241,7 @@ script:
           entity_id: media_player.yamaha_receiver
           source: FireTV Stick
 
-  Mozi Kikapcsolása:
+  mozi_kikapcsolasa:
     sequence:
       - service: switch.turn_off
         data:
