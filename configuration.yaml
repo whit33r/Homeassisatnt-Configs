@@ -225,10 +225,10 @@ group:
     icon: mdi:home 
     entities:
       - group.room
-      - group.media_dev
+      - group.media
       - group.kitchen
       - group.power
-      - group.awesome_people
+#      - group.awesome_people
       - group.climate
   room:
     name: Szoba
@@ -281,7 +281,7 @@ group:
       - sensor.volt
       - sensor.jelenlegi_teljesitmeny
       - sensor.ossz_fogyasztas
-  media_dev:
+  media:
     name: Média Eszközök
 #    view: no
     entities:
