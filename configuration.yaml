@@ -312,8 +312,8 @@ group:
       - sensor.szoba_lux
       - automation.When_lightoff_lockoff
       - automation.When_lighton_lockoff
-      - scene.media_on
-      - script.turn_media_on
+      - script.mozi_bekapcsolasa
+      - script.mozi_kikapcsolasa
 #      - climate.study
 #      - scene.dim_up_movie
 #      - scene.dim_down_movie
