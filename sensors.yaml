@@ -37,7 +37,7 @@
     unit_of_measurement: "kWh"
     force_update: true
   - platform: mqtt
-    name: "Szoba Lux"
+    name: "Fényerősség"
     icon: mdi:spotlight-beam
     state_topic: "room/ambient_light"
     unit_of_measurement: "Lux"
