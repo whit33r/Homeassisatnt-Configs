@@ -226,7 +226,7 @@ switch 5:
 
         
 script:
-  turn_media_on:
+  Mozi Bekapcsolása:
     sequence:
       - service: switch.turn_on
         data:
@@ -240,7 +240,20 @@ script:
         data:
           entity_id: media_player.yamaha_receiver
           source: FireTV Stick
-       
+
+  Mozi Kikapcsolása:
+    sequence:
+      - service: switch.turn_off
+        data:
+          entity_id: switch.yamaha
+      - delay: '00:00:01'
+      - service: switch.turn_off
+        data:
+          entity_id: switch.benq
+      - delay: '00:00:01'
+      - service: switch.turn_off
+        data:
+          entity_id: switch.benq
   
 scene:
   - name: night_on
