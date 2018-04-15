@@ -56,6 +56,29 @@ media_player:
     host: 10.10.0.128
   - platform: yamaha
     host: 10.10.1.17
+    source_ignore:
+      - "AUX"
+      - "HDMI6"
+      - "USB"
+      - "TUNER"
+      - "SERVER"
+      - "Qobuz"
+      - "NET RADIO"
+      - "Juke"
+      - "HDMI1"
+      - "HDMI3"
+      - "HDMI4"
+      - "AUDIO1"
+      - "AUDIO2"
+      - "AV1"
+      - "AV2"
+      - "AV3"
+      - "AUX"
+      - "AirPlay"
+      - "Bluetooth"
+      - "MusicCast Link"
+    source_names:
+      HDMI2: "FireTV Stick"
   - platform: samsungtv
     host: 192.168.0.119
   - platform: spotify
