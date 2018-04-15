@@ -250,10 +250,10 @@ scene:
        brightness: 2
        rgb_color: [0, 0, 255]
        transition: 5
-  - name: media_on
-    sequence:
-      - service: switch.turn_on
-        entity_id: switch.yamaha
+#  - name: media_on
+#    sequence:
+#      - service: switch.turn_on
+#        entity_id: switch.yamaha
 
 
 group:
