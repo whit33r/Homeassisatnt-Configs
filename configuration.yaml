@@ -290,8 +290,8 @@ group:
 #    view: no
     entities:
       - media_player.kodi
- #     - media_player.spotify
- #     - media_player.yamaha_receiver
+      - media_player.spotify
+      - media_player.yamaha_receiver
   awesome_people:
     name: Emberek
     view: no
