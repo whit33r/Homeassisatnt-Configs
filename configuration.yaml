@@ -255,7 +255,7 @@ group:
   hallway:
     name: Folyosó
     entities:
-       - switch.folyoso_vilagitas
+      - switch.folyoso_vilagitas
       - binary_sensor.bejarati_ajto
       - binary_sensor.bejarati_ajto_zar
       - binary_sensor.mozgaserzekelo
