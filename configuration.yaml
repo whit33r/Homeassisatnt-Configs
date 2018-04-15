@@ -252,7 +252,7 @@ scene:
        transition: 5
   - name: media_on
     entities:
-      switch.yamaha
+      switch.yamaha:
         state: on
 
 
