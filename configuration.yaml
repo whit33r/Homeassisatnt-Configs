@@ -226,6 +226,7 @@ group:
     entities:
       - group.room
       - group.kitchen
+      - group.hallway
       - group.climate
       - group.power
       - group.media
@@ -252,6 +253,9 @@ group:
     entities:
       - switch.konyha_vilagitas
       - switch.folyoso_vilagitas
+   hallway:
+     name: Folyosó
+     entities:
       - binary_sensor.bejarati_ajto
       - binary_sensor.bejarati_ajto_zar
       - binary_sensor.mozgaserzekelo
