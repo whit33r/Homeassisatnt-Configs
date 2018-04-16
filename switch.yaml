@@ -37,6 +37,7 @@
   - platform: mqtt
     name: "Szoba Fűtőpanel"
     alias: "heater test"
+    icon: mdi:radiator
     state_topic: "home/sonoff/heater/1/stat"
     command_topic: "home/sonoff/heater/1"
     qos: 1
