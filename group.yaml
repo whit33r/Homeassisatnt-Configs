@@ -51,7 +51,7 @@
   climate:
     name: Hőmérséklet
     view: yes
-        icon: mdi:weather-cloudy
+    icon: mdi:weather-cloudy
     entities:
       - sensor.homerseklet_szoba
       - sensor.homerseklet_konyha
