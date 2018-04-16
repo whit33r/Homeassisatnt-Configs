@@ -12,7 +12,7 @@ homeassistant:
   time_zone: Europe/Budapest
   # Customization file
   customize: !include customize.yaml
-  
+
 influxdb:
 
 frontend:
@@ -86,21 +86,6 @@ media_player:
     client_id: 203125f9bdc249888078b8c7e3b95b72
     client_secret: af391b3da3f74101a81aaa1880abaf8c
 
-switch 8:
-  - platform: broadlink
-    host: 10.10.1.15
-    mac: '34:EA:34:D0:AC:E9'
-    type: rm
-    switches:
-      yamaha:
-        friendly_name: "Yamaha Receiver"
-        command_on: 'JgBQAAABKJIVEBQ1FTUVNBU1FjQUNRUQFTUUEBUQFRAVEBQRFBAVNRUQFDUVEBU1FBEUNRYPFBEUNRYPFTUUEBU1FRAUNRY0FgAFGgABKUcWAA0FAAAAAAAAAAA='
-        command_off: 'JgBQAAABKJIVEBQ1FTUVNBU1FjQUNRUQFTUUEBUQFRAVEBQRFBAVNRUQFDUVEBU1FBEUNRYPFBEUNRYPFTUUEBU1FRAUNRY0FgAFGgABKUcWAA0FAAAAAAAAAAA='
-      benq:
-        friendly_name: "Benq Projector"
-        command_on: 'JgDYAAABJ5EUEBQRFBEUEBUQFBAUERQRExEUERQQFRAUNRU0FBEUEBQ1FTQVNRQ1FBAUERU0FRAUEBQRFBAUERU0FDUVEBQ1FQAF7wABKJAVEBUQFBAVEBUQFBAUERQQFRAVEBQQFRAUNRU0FRAUEBU0FTQVNBU0FRAVEBQ1FQ8VEBQRFBAVEBQ1FTQVEBQ1FAAF8AABKJAVEBUQFBAUERUPFRAUERQQFRAVDxUQFRAUNRQ1FQ8VEBU0FTQVNBU0FRAVEBQ1FBAVEBUQFBAVEBQ1FTQVEBQ1FAANBQ=='
-        command_off: 'JgCQAAABJ5EVEBQRExEVEBQQFBEUEBUQFBEUEBUQFQ8VNBU1FBAVEBQQFDUVNRQ1FBAVEBQ1FRAUNRQQFBEVDxQ1FTUUEBU0FQAF8AABJ5EVDxUQFRAUEBUQFQ8VEBUQFBAVEBQQFBEVNBU0FRAUEBQRFTQVNBU0FRAUEBU0FRAVNBUQFQ8VEBU0FTQVEBQ1FQANBQAAAAAAAAAA'
-        
 notify:
   - name: pushover-noti
     platform: pushover
@@ -159,74 +144,7 @@ sun:
  # retain: true
   #value_template: '{{ value.x }}'
 
-switch:
-  platform: mqtt
-  name: "Folyosó Világítás"
-  icon: mdi:lightbulb
-  alias: "folyoso_light"
-  state_topic: "home/sonoff/living_room/1/stat"
-  command_topic: "home/sonoff/living_room/1"
-  qos: 1
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
 
-switch 2:
-  platform: mqtt
-  name: "Konyha Világítás"
-  icon: mdi:lightbulb
-  alias: "kitchen_light"
-  state_topic: "home/sonoff/kitchen/1/stat"
-  command_topic: "home/sonoff/kitchen/1"
-  qos: 1
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
-
-switch 3:
-  platform: mqtt
-  name: "Szoba Fűtőpanel"
-  alias: "heater test"
-  state_topic: "home/sonoff/heater/1/stat"
-  command_topic: "home/sonoff/heater/1"
-  qos: 1
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
-
-switch 5:
-  platform: mqtt
-  name: "Fogyasztásmérő"
-  state_topic: "home/sonoff/pwrHeater/1/stat"
-  command_topic: "home/sonoff/pwrHeater/1"
-  qos: 1
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
-
-switch 4:
-  platform: mqtt
-  name: "Szoba Világítás"
-  icon: mdi:lightbulb
-  alias: "szoba_vilagitas"
-  state_topic: "home/sonoff/room/1/stat"
-  command_topic: "home/sonoff/room/1"
-  qos: 1
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
-
-switch 5:
-  platform: mqtt
-  name: "test"
-  state_topic: "home/sonoff/test/1/stat"
-  command_topic: "home/sonoff/test/1"
-  qos: 1
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
-
-        
 script:
   mozi_bekapcsolasa:
     sequence:
@@ -256,7 +174,7 @@ script:
       - service: switch.turn_off
         data:
           entity_id: switch.benq
-  
+
 scene:
   - name: night_on
 #    friendly_name: night_light
@@ -294,7 +212,7 @@ scene:
 group:
   default_view:
     view: yes
-    icon: mdi:home 
+    icon: mdi:home
     entities:
       - group.room
       - group.kitchen
@@ -372,8 +290,8 @@ group:
     entities:
       - device_tracker.lg_g4lan
       - device_tracker.whit33r_samsung_s7lan
-      
-    
+
+
 alexa:
 
 intent_script: !include alexa_intents.yaml
@@ -387,4 +305,4 @@ automation: !include automation.yaml
 sensor: !include sensors.yaml
 light: !include light.yaml
 binary_sensor: !include binary_sensor.yaml
-
+switch: !include switch.yaml
