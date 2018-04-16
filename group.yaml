@@ -1,0 +1,81 @@
+group:
+  default_view:
+    view: yes
+    icon: mdi:home
+    entities:
+      - group.room
+      - group.kitchen
+      - group.hallway
+      - group.climate
+      - group.power
+      - group.media
+#      - group.awesome_people
+  room:
+    name: Szoba
+    entities:
+#      - light.karacsonyfa
+#      - light.kis_karacsonyfa
+      - light.szoba_hangulatfeny
+      - switch.szoba_vilagitas
+#      - switch.test
+      - sensor.fenyerosseg
+      - automation.When_lightoff_lockoff
+      - automation.When_lighton_lockoff
+      - script.mozi_bekapcsolasa
+      - script.mozi_kikapcsolasa
+#      - climate.study
+#      - scene.dim_up_movie
+#      - scene.dim_down_movie
+#      - automation.media_player_pausedstopped
+#      - automation.media_player_pausedstopped_
+  kitchen:
+    name: Konyha
+#    view: no
+    entities:
+      - switch.konyha_vilagitas
+  hallway:
+    name: Folyosó
+    entities:
+      - switch.folyoso_vilagitas
+      - binary_sensor.bejarati_ajto
+      - binary_sensor.bejarati_ajto_zar
+      - binary_sensor.mozgaserzekelo
+#  upstairs:
+#    name: Kids
+#    icon: mdi:account-multiple
+#    view: yes
+#    entities:
+#      - input_boolean.notify_home
+#      - camera.demo_camera
+#      - device_tracker.demo_paulus
+#      - group.garden
+  climate:
+    name: Hőmérséklet
+    view: no
+    entities:
+      - sensor.homerseklet_szoba
+      - sensor.homerseklet_konyha
+      - sensor.homerseklet_kulso
+      - climate.szoba_termosztat
+      - switch.szoba_futopanel
+      - switch.fogyasztasmero
+  power:
+    name: Fogyasztás
+#    view: no
+    entities:
+      - sensor.volt
+      - sensor.jelenlegi_teljesitmeny
+      - sensor.ossz_fogyasztas
+  media:
+    name: Média Eszközök
+#    view: no
+    entities:
+      - media_player.kodi
+      - media_player.spotify
+      - media_player.yamaha_receiver
+  awesome_people:
+    name: Emberek
+    view: no
+    entities:
+      - device_tracker.lg_g4lan
+      - device_tracker.whit33r_samsung_s7lan
