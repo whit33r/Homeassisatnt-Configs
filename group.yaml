@@ -50,7 +50,7 @@
 #      - group.garden
   climate:
     name: Hőmérséklet
-    view: yes
+    view: no
     icon: mdi:weather-cloudy
     entities:
       - sensor.homerseklet_szoba
