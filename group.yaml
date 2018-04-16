@@ -59,7 +59,7 @@
       - sensor.homerseklet_kulso
       - climate.szoba_termosztat
       - switch.szoba_futopanel
-      - switch.fogyasztasmero
+      #- switch.fogyasztasmero
   power:
     name: Fogyasztás
 #    view: no
