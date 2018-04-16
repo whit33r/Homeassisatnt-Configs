@@ -2,7 +2,6 @@
     view: yes
     icon: mdi:home-assistant
     entities:
-      - binary_sensor.mosquitto
       - group.room
       - group.kitchen
       - group.hallway
@@ -23,6 +22,7 @@
       - automation.When_lighton_lockoff
       - script.mozi_bekapcsolasa
       - script.mozi_kikapcsolasa
+      - binary_sensor.mosquitto
 #      - climate.study
 #      - scene.dim_up_movie
 #      - scene.dim_down_movie
