@@ -1,5 +1,5 @@
   default_view:
-    view: no
+    view: yes
     icon: mdi:home-assistant
     entities:
       - group.room
