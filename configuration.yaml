@@ -36,7 +36,7 @@ http:
    api_password: !secret http_password
    ssl_certificate: /etc/letsencrypt/live/whiterhass.duckdns.org/fullchain.pem
    ssl_key: /etc/letsencrypt/live/whiterhass.duckdns.org/privkey.pem
-   base_url: whiterhass.duckdns.org:443
+   base_url: !secret url
 
 mqtt:
   broker: localhost
@@ -83,14 +83,14 @@ media_player:
   - platform: samsungtv
     host: 192.168.0.119
   - platform: spotify
-    client_id: 203125f9bdc249888078b8c7e3b95b72
-    client_secret: af391b3da3f74101a81aaa1880abaf8c
+    client_id: !secret spotid
+    client_secret: !secret spotsec
 
 notify:
   - name: pushover-noti
     platform: pushover
-    api_key: ay1uf5zuhuj6fmkum5bxddirq3ijuh
-    user_key: uzo3mbrfe7n9u697xbimdohgy4yyzw
+    api_key: !secret notifyapi
+    user_key: !secret notifykey
 
 emulated_hue:
   host_ip: 10.10.0.22
@@ -132,18 +132,6 @@ map:
 # Track the sun
 sun:
 
-#switch:
-#  platform: mqtt
-#  name: "Switch"
-#  state_topic: "whit33r/sonoff1"
-#  command_topic: "/whit33r/kitchen/sonoff1"
-#  payload_on: "ON"
-#  payload_off: "OFF"
-#  optimistic: true
-#  qos: 1
- # retain: true
-  #value_template: '{{ value.x }}'
-
 
 scene:
   - name: night_on
@@ -176,11 +164,6 @@ scene:
     entities:
       switch.yamaha:
         state: on
-
-
-
-
-
 
 alexa:
 
