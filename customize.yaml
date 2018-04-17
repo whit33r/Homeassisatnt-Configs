@@ -10,3 +10,13 @@
       device_class: door
     binary_sensor.bejarati_ajto_zar:
       device_class: lock
+     sensor.homerseklet_szoba:
+      templates:
+        rgb_color: >
+          if (state > 25) {
+            return [191,27,0];
+          } else if (state >= 18 ) {
+            return [98,158,81];
+          } else {
+            return [68,126,188];
+          }
