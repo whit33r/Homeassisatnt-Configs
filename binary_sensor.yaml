@@ -19,6 +19,7 @@
   - platform: mqtt
     name: "Bejárati Ajtó Zár"
     state_topic: "sensor/maindoor/lock"
+    icon: mdi:lock
     qos: 0
     payload_on: "Nyitva"
     payload_off: "Zárva"
