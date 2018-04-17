@@ -7,6 +7,6 @@
       friendly_name: Mozi Kikapcsolása
 #      can_cancel: false
      binary_sensor.bejarati_ajto:
-        device_class: door
+       device_class: door
      binary_sensor.bejarati_ajto_zar:
-        device_class: lock
+       device_class: lock
