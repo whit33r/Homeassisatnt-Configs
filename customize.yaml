@@ -12,11 +12,11 @@
       device_class: lock
     sensor.homerseklet_szoba:
       templates:
-        rgb_color: >
+        theme: >
           if (state > 25) {
-            return [191,27,0];
+            return 'hot';
           } else if (state >= 18 ) {
-            return [98,158,81];
+            return 'comfortable';
           } else {
-            return [68,126,188];
+            return 'cold';
           }
