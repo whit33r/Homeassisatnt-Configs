@@ -42,3 +42,7 @@
     state_topic: "room/ambient_light"
     unit_of_measurement: "Lux"
     force_upcate: true
+   - platform: snmp
+    host: 10.10.0.1
+    community: public
+    baseoid: 1.3.6.1.2.1.4.22.1.2
