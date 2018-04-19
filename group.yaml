@@ -8,7 +8,7 @@
       - group.climate
       - group.power
       - group.media
-#      - group.awesome_people
+      - group.awesome_people
   room:
     name: Szoba
     entities:
@@ -76,7 +76,7 @@
       - media_player.yamaha_receiver
   awesome_people:
     name: Emberek
-    view: no
+    view: yes
     entities:
       - device_tracker.lg_g4lan
       - device_tracker.whit33r_samsung_s7lan
