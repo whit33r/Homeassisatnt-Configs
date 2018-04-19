@@ -76,7 +76,7 @@
       - media_player.yamaha_receiver
   awesome_people:
     name: Emberek
-    view: yes
+    view: no
     entities:
       - device_tracker.lg_g4lan
       - device_tracker.whit33r_samsung_s7lan
