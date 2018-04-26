@@ -90,3 +90,21 @@
     view: no
     entities:
       - binary_sensor.mosquitto
+  script_tab:
+    name: Stkript
+    view: yes
+    icon: mdi:script
+    entities:
+      - group.status
+  status:
+    name: Automatizálások
+    view: no
+    entities:
+      - automation.When_lightoff_lockoff
+      - automation.When_lighton_lockoff
+      - script.mozi_bekapcsolasa
+      - script.mozi_kikapcsolasa
+      - scene.dim_up_movie
+      - scene.dim_down_movie
+      - automation.media_player_pausedstopped
+      - automation.media_player_pausedstopped_
