@@ -95,8 +95,8 @@
     view: yes
     icon: mdi:script
     entities:
-      - group.status
-  script_:
+      - group.script
+  script:
     name: Automatizálások
     view: no
     entities:
