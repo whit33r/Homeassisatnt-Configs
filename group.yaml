@@ -22,7 +22,6 @@
       - automation.When_lighton_lockoff
       - script.mozi_bekapcsolasa
       - script.mozi_kikapcsolasa
-      - binary_sensor.mosquitto
 #      - climate.study
 #      - scene.dim_up_movie
 #      - scene.dim_down_movie
@@ -80,3 +79,13 @@
     entities:
       - device_tracker.lg_g4lan
       - device_tracker.whit33r_samsung_s7lan
+  status_tab:
+    name: Státusz
+    view: yes
+    entities:
+      - group.status
+  status:
+    name: Státusz
+    view: yes
+    entities:
+      - binary_sensor.mosquitto
