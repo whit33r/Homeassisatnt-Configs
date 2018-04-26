@@ -86,6 +86,6 @@
       - group.status
   status:
     name: Státusz
-    view: yes
+    view: no
     entities:
       - binary_sensor.mosquitto
