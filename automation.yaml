@@ -83,7 +83,7 @@
         entity_id: binary_sensor.mozgaserzekelo
         to: 'off'
         for:
-         minutes: 1
+         minutes: 3
     action:
       - service: homeassistant.turn_off
         entity_id: switch.folyoso_vilagitas
