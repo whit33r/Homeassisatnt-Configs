@@ -18,10 +18,10 @@
       - switch.szoba_vilagitas
 #      - switch.test
       - sensor.fenyerosseg
-      - automation.When_lightoff_lockoff
-      - automation.When_lighton_lockoff
-      - script.mozi_bekapcsolasa
-      - script.mozi_kikapcsolasa
+#      - automation.When_lightoff_lockoff
+#      - automation.When_lighton_lockoff
+#      - script.mozi_bekapcsolasa
+#      - script.mozi_kikapcsolasa
 #      - climate.study
 #      - scene.dim_up_movie
 #      - scene.dim_down_movie
@@ -108,3 +108,4 @@
       - scene.dim_down_movie
       - automation.media_player_pausedstopped
       - automation.media_player_pausedstopped_
+      - automation.notify_pushover
