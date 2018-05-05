@@ -33,7 +33,18 @@
     payload_on: "on"
     payload_off: "off"
     retain: true
-
+    
+  - platform: mqtt
+    name: "Folyosó Világítás2"
+    icon: mdi:lightbulb
+    alias: "kitchen_light2"
+    state_topic: "home/sonoff/kitchen/1/stat2"
+    command_topic: "home/sonoff/kitchen/2"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    retain: true
+    
   - platform: mqtt
     name: "Szoba Fűtőpanel"
     alias: "heater test"
