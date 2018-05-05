@@ -45,7 +45,7 @@
     payload_off: "off"
     retain: true
     
-    - platform: mqtt
+  - platform: mqtt
     name: "Folyosó Világítás3"
     icon: mdi:lightbulb
     alias: "kitchen_light3"
