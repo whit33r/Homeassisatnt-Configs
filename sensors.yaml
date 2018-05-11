@@ -4,13 +4,7 @@
       - summary
       - icon
       - nearest_storm_distance
-    update_interval:
-    # At least one of these must be specified:
-      days: 0
-      ho urs: 0
-      minutes: 3
-      seconds: 0
-      milliseconds: 0
+    update_interval: '00:03'
 
   - platform: yr
     name: Időjárás
