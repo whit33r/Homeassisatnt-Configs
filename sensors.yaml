@@ -4,6 +4,9 @@
       - summary
       - icon
       - nearest_storm_distance
+      - precip_intensity
+      - precip_probability
+      - cloud_cover
     update_interval: '00:03'
 
   - platform: yr
