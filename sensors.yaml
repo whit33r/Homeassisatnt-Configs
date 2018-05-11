@@ -8,6 +8,7 @@
       - precip_probability
       - cloud_cover
     update_interval: '00:03'
+    language: hu
 
   - platform: yr
     name: Időjárás
