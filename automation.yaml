@@ -104,7 +104,7 @@
          minutes: 3
     action:
       - service: homeassistant.turn_off
-        entity_id: switch.folyoso_vilagitas
+        entity_id: switch.switch.furdo_vilagitas
   - alias: Turn on kitchen light when there is movement_
     trigger:
      - platform: state
@@ -112,4 +112,4 @@
        to: 'on'
     action:
      - service: homeassistant.turn_on
-       entity_id: switch.folyoso_vilagitas
+       entity_id: switch.furdo_vilagitas
