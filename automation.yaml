@@ -95,3 +95,21 @@
     action:
      - service: homeassistant.turn_on
        entity_id: switch.folyoso_vilagitas
+      - alias: Turn off kitchen light 10 minutes after last movement_
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.mozgaserzekelo_furdo
+        to: 'off'
+        for:
+         minutes: 3
+    action:
+      - service: homeassistant.turn_off
+        entity_id: switch.folyoso_vilagitas
+  - alias: Turn on kitchen light when there is movement_
+    trigger:
+     - platform: state
+       entity_id: binary_sensor.mozgaserzekelo_furdo
+       to: 'on'
+    action:
+     - service: homeassistant.turn_on
+       entity_id: switch.folyoso_vilagitas
