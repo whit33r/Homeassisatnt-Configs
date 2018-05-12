@@ -36,6 +36,7 @@
     name: Folyosó
     entities:
       - switch.folyoso_vilagitas
+      - switch.furdo_vilagitas
 #      - switch.folyoso_vilagitas2
 #      - switch.folyoso_vilagitas3
       - binary_sensor.bejarati_ajto
