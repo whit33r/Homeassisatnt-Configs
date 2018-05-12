@@ -27,7 +27,7 @@
     name: "Fürdő Világítás"
     icon: mdi:lightbulb
     alias: "bathroom_light"
-    state_topic: "home/sonoff/living_room/1/stat"
+    state_topic: "home/light/bathroom/1/stat"
     command_topic: "home/light/bathroom/1"
     qos: 1
     payload_on: "on"
