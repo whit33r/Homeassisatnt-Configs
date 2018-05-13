@@ -43,6 +43,7 @@
       - binary_sensor.bejarati_ajto_zar
       - binary_sensor.mozgaserzekelo
       - binary_sensor.mozgaserzekelo_furdo
+      - binary_sensor.mozgaserzekelo_wc
 #  upstairs:
 #    name: Kids
 #    icon: mdi:account-multiple
