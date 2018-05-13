@@ -35,6 +35,17 @@
     retain: true
     
   - platform: mqtt
+    name: "WC Világítás"
+    icon: mdi:lightbulb
+    alias: "wc_light"
+    state_topic: "home/light/wc/1/stat"
+    command_topic: "home/light/wc/1"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    retain: true
+    
+  - platform: mqtt
     name: "Konyha Világítás"
     icon: mdi:lightbulb
     alias: "kitchen_light"
