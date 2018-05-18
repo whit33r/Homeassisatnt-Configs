@@ -36,6 +36,8 @@ frontend:
 camera:
   - platform: onvif
     host: 10.10.1.140
+    username: whit33r
+    passowrd: basH3Rfr
 
 # Enables configuration UI
 config:
