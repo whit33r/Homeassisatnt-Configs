@@ -39,6 +39,9 @@ camera:
     port: 9527
     username: whit33r
     passowrd: basH3Rfr
+    
+ffmpeg:
+  ffmpeg_bin: /usr/bin/ffmpeg
 
 # Enables configuration UI
 config:
