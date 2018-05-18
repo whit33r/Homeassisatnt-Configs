@@ -37,7 +37,7 @@ camera:
   - platform: onvif
     host: 10.10.1.140
     port: 9527
-    username: whit33rv
+    username: whit33r
     passowrd: basH3Rfr
 
 # Enables configuration UI
