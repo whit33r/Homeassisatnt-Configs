@@ -33,6 +33,10 @@ frontend:
 # Enables the frontend
 #frontend:
 
+camera:
+  - platform: onvif
+    host: 10.10.1.140
+
 # Enables configuration UI
 config:
 
