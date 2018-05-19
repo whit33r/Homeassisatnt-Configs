@@ -36,7 +36,7 @@ frontend:
 camera:
   - platform: onvif
     host: 10.10.1.140
-    port: 9527
+    port: 6554
     username: whit33r
     passowrd: basH3Rfr
     
