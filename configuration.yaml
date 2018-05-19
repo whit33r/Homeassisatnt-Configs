@@ -34,11 +34,9 @@ frontend:
 #frontend:
 
 camera:
-  - platform: onvif
-    host: 10.10.1.140
-    port: 6554
-    username: whit33r
-    passowrd: basH3Rfr
+  - platform: ffmpeg
+    input: 'rtsp://10.10.1.140:6554/user=whit33r&password=basH3Rfr&channel=1&stream=0.sdp?real_stream--rtp-caching=100'
+    name: Garage Camera
     
 ffmpeg:
   ffmpeg_bin: /usr/bin/ffmpeg
