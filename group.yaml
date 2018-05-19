@@ -45,7 +45,7 @@
       - binary_sensor.mozgaserzekelo
       - binary_sensor.mozgaserzekelo_furdo
       - binary_sensor.mozgaserzekelo_wc
-      - camera.onvif_camera
+      - camera.garage_camera
 #  upstairs:
 #    name: Kids
 #    icon: mdi:account-multiple
